@@ -23,14 +23,12 @@ function bindEvents() {
                 config.input.addEventListener("change", this.uploadImageFile.bind(this))
             }
             if (config && config.button) {
-                console.log("inside button clieck", config.button)
                 config.button.addEventListener("click", this.setImageValue.bind(this));
             }
 
             this.imageContainer = imageBox.el;
             if (imageBox.collapseOnScroll) {
 
-                console.log(this.state.loadSecondScreen,"gdfgfddfgdfgdfggdf")
                 if (!this.state.loadSecondScreen) {
                 this.addIntersectionObserver()
                 this.delegate(

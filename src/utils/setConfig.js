@@ -1,8 +1,6 @@
 import extend from './extend';
 const setConfig = function(options = {}, props = {}) {
-    console.log(options, props ,"inside setConfig")
     this.options = extend(true,{},options,props);
-    console.log(this.options);
     const {
         enabled,
         uploadConfig,

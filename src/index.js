@@ -1,6 +1,6 @@
 //import UnbxdSearchCore from "@unbxd-ui/unbxd-search-core";
 import delegate from "./utils/delegate";
-import options from './utils/options';
+import options from './common/options';
 import setMethods from './core/setMethods';
 import setConfig from './utils/setConfig';
 

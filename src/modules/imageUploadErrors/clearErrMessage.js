@@ -4,7 +4,6 @@ export default function clearErrMessage() {
         visualSearchRequest,
         imgErrDiv
     } = this.options;
-    console.log("htihthithtithihtht")
         this.state.errMessage = ""
         imgErrDiv.innerHTML = ""
 }

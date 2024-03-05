@@ -6,10 +6,8 @@ const uploadImageFile = async function () {
         let encoded;
         let imageattributes; 
         if (file) {
-            encoded = await this.getBase64(file)
-            imageattributes = await this.getImageAttributes(file , false)
-        }
-        console.log(encoded , imageattributes)
+        encoded = await this.getBase64(file)
+        imageattributes = await this.getImageAttributes(file , false)
         window.unbxdSearch.options.productType = "SEARCH";
         if (encoded.image && this.isValidImage(file.type, file.size) && this.isValidDimension(imageattributes.width , imageattributes.height)) {
             window.unbxdSearch.resetAll();
@@ -17,6 +15,7 @@ const uploadImageFile = async function () {
             this.state.enableVisualSearch = true
             this.state.visualSearchRequest = true
             this.state.imageattributes = imageattributes;
+            this.state.imageUrlData = imageattributes.src
             this.state.encodedImage = encoded.image
             this.state.encodeData = encoded.encodedData
             this.state.fileType = encoded.type.split(":")[1]
@@ -30,6 +29,7 @@ const uploadImageFile = async function () {
         } else {
             window.unbxdSearch.searchResultsWrapper.innerHTML = null;
         }
+    }
     } catch (err) {
         console.error("input > uploadImageFile.js", err)
     }

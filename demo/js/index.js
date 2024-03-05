@@ -928,10 +928,9 @@ window.unbxdSearch = new UnbxdSearch({
     // },
     onAction: function (e, ctx) { },
     onEvent: function (instance, type, data) {
-        if (type === "AFTER_VS_API_SUCCESS") {
-          //  console.log("hit herererere" , document.getElementById("myModal"))
+        if (type === "AFTER_API_CALL") {
+            console.log("hit herererere" , document.getElementById("myModal"))
             document.getElementById("myModal").style.display = "none";
-            window.unbxdImageSearch.handleVisualSearch(type , data , instance);
         }
         if (type === "AFTER_VS_API_ERROR") {
           //  console.log("hit herererere" , document.getElementById("myModal"))

@@ -7,10 +7,5 @@ const initialize = function() {
     this.validateConfigs();
     this.bindEvents = bindEvents.bind(this);
     this.bindEvents();
-
-
-
-    
-
 }
 export default initialize;

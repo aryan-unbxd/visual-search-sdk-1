@@ -34,7 +34,7 @@
         }
         return params;
     }catch(err){
-        console.log("getQueryParams.js",err);
+        console.error("getQueryParams.js",err);
         return -1;
     }
    

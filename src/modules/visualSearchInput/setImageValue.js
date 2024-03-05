@@ -1,10 +1,13 @@
-const setImageValue = function (url) {
+const setImageValue = async function (url) {
     try {
         this.clearErrMessage();
         let val = this.options.uploadConfig.el.value || url;
         window.unbxdSearch.options.productType = "SEARCH";
         if (val && this.isValidUrl(val)) {
             window.unbxdSearch.resetAll();
+            let imageattributes = await this.getImageAttributes(val , true)
+            this.state.imageattributes = imageattributes
+            this.state.imageUrlData = imageattributes.src
             this.enableVisualSearch()
             this.state.imageUrl = val
             this.state.isImageUpload = true

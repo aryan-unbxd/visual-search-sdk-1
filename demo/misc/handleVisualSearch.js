@@ -3,7 +3,6 @@ export default function handleVisualSearch(type,) {
     // const {
     //     imageBox,
     // } = this.options;
-
    if(type == "AFTER_VS_API_SUCCESS"){
        
     //this.getVisualSearchQueryParams();

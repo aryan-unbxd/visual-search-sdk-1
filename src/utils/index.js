@@ -1,13 +1,13 @@
 import {getImageAttributes} from './getimageAttributes';
 import {getBase64} from './getBase64';
 import getQueryParams from './getQueryParams';
-import getBoxUrl from './getboxurl';
+import getImageSrc from './getImageSrc';
 const utils = (prototype) => {
     prototype = Object.assign(prototype,{
         getImageAttributes,
         getBase64,
         getQueryParams,
-        getBoxUrl
+        getImageSrc
     })
 }
 
@@ -16,6 +16,6 @@ export {
     getImageAttributes,
     getBase64,
     getQueryParams,
-    getBoxUrl
+    getImageSrc
 
 };

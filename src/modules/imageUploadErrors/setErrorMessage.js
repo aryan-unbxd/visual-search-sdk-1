@@ -3,6 +3,7 @@ import isValidUrl from "./isValidUrl"
 import isValidImage  from "./ImageUploadValidations"
 import isValidDimension from "./imageDimensions"
 import renderErrMessage from "./renderErrMessage"
+import { errorMessages } from "../../common/constant/errorMessages"
 const setError = function (state, type) {
 
     if (state) {
@@ -33,7 +34,8 @@ const setErrorMessage = (prototype) => {
         isValidUrl,
         isValidImage,
         isValidDimension,
-        renderErrMessage
+        renderErrMessage,
+        errorMessages
     })
 }
 export {
@@ -43,5 +45,6 @@ export {
     isValidUrl,
     isValidImage,
     isValidDimension,
-    renderErrMessage
+    renderErrMessage,
+    errorMessages
 }

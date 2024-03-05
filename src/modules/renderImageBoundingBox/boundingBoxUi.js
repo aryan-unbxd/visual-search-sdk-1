@@ -20,10 +20,7 @@ export const boundingBoxUI = async (boundingboxData, selectedBoxId, imageContain
                     imageBoxUi += centerDotUi
             }
         });
-        console.log(imageBoxUi,"imageBOxUi");
     imageContainer.innerHTML = imageBoxUi;       
-    console.log(imageContainer,"imageContainerimageContainerimageContainer")
-
 }
 
 var loadImage = function (src, scale) {
