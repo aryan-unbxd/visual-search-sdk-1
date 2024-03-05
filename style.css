@@ -1,0 +1,194 @@
+#unbxdvsicon {
+    top: 19%;
+    position: relative;
+    right: 10%;
+  font-size: 24px;
+  cursor: pointer;
+  position: absolute;
+    }
+  
+    #myModal1 {
+      display: none;
+      position: fixed;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0,0,0,0.4);
+    }
+  
+    #myModal {
+      z-index: 999;
+    }
+    .modal-content {
+      background-color: white;
+      margin: 15% auto;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 80%;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    }
+    #imageContainer {
+        width: 100%;
+      }
+      .UNX-Image-box-Wrapper {
+        position: relative;
+        display: inline-block;
+      }
+    
+    .UNX-VS-Imagebox {
+        width : 100%;
+        height: 100%;
+    }
+    .hidden {
+        display: none;
+    }
+    .selected {
+        border: 0px solid red !important ;
+    }
+    
+        .bounding-box {
+        position: absolute;
+        border-radius: 4px;
+        cursor: pointer;
+       background: linear-gradient(white, white) top left no-repeat, linear-gradient(white, white) top left no-repeat, linear-gradient(white, white) top right no-repeat, linear-gradient(white, white) top right no-repeat, linear-gradient(white, white) bottom left no-repeat, linear-gradient(white, white) bottom left no-repeat, linear-gradient(white, white) bottom right no-repeat, linear-gradient(white, white) bottom right no-repeat, rgba(255, 255, 255, 0.15);
+        background-clip: border-box, border-box, border-box, border-box, border-box, border-box, border-box, border-box, content-box;
+        background-size: 4px 20px, 20px 4px;
+    
+      }
+    
+    .center-dot {
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        background-color: blue;
+        border-radius: 50%;
+      }
+      .visual-matches{
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 25px;
+color: #273251;
+display: flex;
+
+      }
+      .number-of-products{
+        font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 25px;
+color: #687F8F;
+left: 4px;
+position: relative;
+
+      }
+      #image-upload-errors{
+        color: red;
+      }
+
+
+      .visual-search-container {
+        text-align: center;
+        position: fixed;
+        top: 15%;
+        left: 20%;
+        background: #ffffff;
+        z-index: 99999;
+        margin: 0 auto;
+        padding: 15px;
+        width: 60%;
+        border-radius: 8px;
+        box-shadow: 0 13px 27px -5px #32325d40, 0 8px 16px -8px #0000004d, 0 -6px 16px -6px #00000006;
+      }
+      .visual-inner {
+        display: flex;
+        justify-content: space-evenly;
+        padding: 10px;
+      }
+      .visual-images-grid {
+        display: flex;
+        padding: 0 4px;
+      }
+      .column {
+        flex: 50%;
+        max-width: 40%;
+        padding: 4px;
+      }
+      .column img {
+        margin-top: 8px;
+        vertical-align: middle;
+        width: 100%;
+      }
+      .visual-image-upload-section {
+        display: flex;
+        flex-direction: column;
+      }
+      .visual-featured-images {
+        width: 500px;
+      }
+      .upload-image-pic {
+      width: 250px;
+      margin: 0 auto;
+      }
+      .fa-times {
+      float: right;
+      cursor: pointer;
+      }
+      #upload-image {
+      opacity: 0;
+      position: absolute;
+      right: 50px;
+      }
+      .upload-button {
+        color: #fff;
+        background: #eb506e;
+        border-radius: 4px;
+        padding: 6px 21px;
+        width: 200px;
+        margin: 20px auto;
+        font-size: 12px;
+        font-weight: 700;
+      }
+      .visual-cam {
+          padding-right: 7px;
+      }
+      .or-text {
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid #DDE2EE;
+        line-height: .1em;
+        margin: 10px 0 40px;
+        color: #dde2ee;
+        font-size: 15px;
+      }
+      .or-text span { 
+        background:#fff; 
+        padding:0 10px; 
+      }
+      .search-text {
+      color: #616E7A;
+      font-size: 12px;
+      text-align: left;
+      margin-bottom: 5px;
+      font-weight: 700;
+      }
+      #upload-url {
+        padding: 5px 20px;
+        border: 1px solid #C9D0DA;
+        border-radius: 4px;
+        outline: transparent;
+        width: 100%;
+        transition: border-color calc(var(--transition, .2) * 1s) ease;
+        background: #fff;
+        font-size: 14px;
+      }
+      .search-subtitle {
+      color:#687F8F;
+      font-size: 14px;
+      padding-bottom: 15px;
+      }
+      .search-title-visual {
+      color: #273251;
+      }
