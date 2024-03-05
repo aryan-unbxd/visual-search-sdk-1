@@ -1,0 +1,121 @@
+.main-image-wrapper {
+    position: relative;
+    display: inline-block;
+    height: 85%;
+  }
+  .secondary-images {
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    width: 250px;
+}
+.image-wrapper {
+    margin-top: 20px;
+    padding: 20px;
+    max-width: 100%; /* Restrict the width to the container's width */
+       max-height: 100%; /* Restrict the height to the container's height */
+       margin-right: 10px;
+ }
+ .image-wrapper-cropped {
+    margin-top: 10px;
+    padding: 10px;
+    display: grid;
+     column-gap: 10px;
+ 
+     align-items: center;
+     grid-template-columns: 2fr 1fr;
+  
+    
+ 
+ }
+ .secondary-images {
+     overflow: hidden;
+     display: flex;
+     flex-wrap: wrap;
+     width: 250px;
+ }
+ .cropped-image-wrapper {
+     padding: 10px;
+     height: 20%;
+ }
+ #imageContainer {
+   width: 100%;
+ }
+ 
+ .secondary-images {
+   width: 100%;
+   display: block;
+   display: flex;
+ }
+ .selected-cropped-image {
+     border : 2px red solid;
+ }
+ .cropped-image-wrapper img {
+     width: 50px;
+     height: 50px;
+     border-radius: 8px;
+ }
+ .secondary-images img {
+       max-width: 100%; /* Restrict the width to the container's width */
+       max-height: 100%; /* Restrict the height to the container's height */
+       margin-bottom: 10px; /* Adjust the margin between cropped images */
+     }
+ .down-button-class{
+     width: 100%;
+   display: none;
+ }
+
+ .arrow.circle {
+  background: #ffffff;
+  border-radius: 50px;
+  border: 1px solid #DDE2EE;
+}
+
+.arrow {
+  width: 40px;
+  height: 40px;
+  margin: 24px;
+  display: inline-block;
+  position: inherit;
+  bottom: 20%;
+  left: 4%;
+  z-index: 999;
+}
+
+.arrow.down::before {
+  transform: rotate(135deg);
+  margin: -20px 0 0 -15px;
+}
+
+.arrow::before {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  top: 90%;
+  left: 72%;
+  border-style: solid;
+  border-color: #6e99c2;
+  border-width: 2px 2px 0 0;
+  border-top-left-radius: -2px;
+  position: absolute;
+  transform-origin: 50% 50%;
+}
+
+.arrow.down::after {
+  width: 0;
+  height: 18px;
+  border-width: 0 2px 0 0;
+  transform: translate(-1px, -26px);
+}
+
+.arrow::after {
+  content: "";
+  display: block;
+  top: 93%;
+  left: 48%;
+  border-style: solid;
+  border-color: #6e99c2;
+  position: absolute;
+  transform-origin: 50% 50%;
+}
